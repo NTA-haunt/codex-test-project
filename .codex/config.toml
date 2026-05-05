@@ -1,0 +1,2 @@
+model = "gpt-5.5"
+instructions = "Respond to repository users in Vietnamese by default. Keep code, commands, filenames, API names, and quoted error messages in their original language when needed for accuracy."
