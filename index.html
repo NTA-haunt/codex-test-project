@@ -13,10 +13,13 @@
 
 <script>
     function addComment() {
-        const input = document.getElementById("commentInput").value;
-        document.getElementById("comments").innerHTML += `
-        <p>${input}</p>
-      `;
+        const commentInput = document.getElementById("commentInput");
+        const commentsContainer = document.getElementById("comments");
+        const commentText = commentInput.value;
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent = commentText;
+        commentsContainer.appendChild(paragraph);
     }
 </script>
 </body>
