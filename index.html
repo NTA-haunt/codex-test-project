@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSS Demo</title>
+</head>
+<body>
+<h2>Comment</h2>
+
+<input type="text" id="commentInput" placeholder="Enter comment">
+<button onclick="addComment()">Post</button>
+
+<div id="comments"></div>
+
+<script>
+    function addComment() {
+        const commentInput = document.getElementById("commentInput");
+        const commentsContainer = document.getElementById("comments");
+        const commentText = commentInput.value;
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent = commentText;
+        commentsContainer.appendChild(paragraph);
+    }
+</script>
+</body>
+</html>
