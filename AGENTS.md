@@ -49,3 +49,9 @@ Before opening a PR, run the available commands and confirm `git status --short`
 ## Agent-Specific Instructions
 
 Respond to repository users in Vietnamese by default. Keep code, commands, filenames, API names, and quoted error messages in their original language when that preserves accuracy.
+
+## Review guidelines
+- Always write GitHub review comments in Vietnamese.
+- Use clear, concise Vietnamese.
+- Explain security findings in Vietnamese.
+- Keep severity labels such as P0/P1 unchanged.
